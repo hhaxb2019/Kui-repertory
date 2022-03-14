@@ -1,2 +1,2 @@
 # Kui-repertory
-切换大小位移的轮播图
+html-css小案例
