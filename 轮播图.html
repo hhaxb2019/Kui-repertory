@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 1000px;
+            height: 620px;
+            background-color: gray;
+            margin: 50px auto;
+            position: relative;
+        }
+        .box div{
+            width: 300px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -250px;
+            margin-left: -150px;
+            border-radius: 8px;
+        }
+        .box div a{
+            display: block;
+            text-decoration: none;
+            width: 150px;
+            height: 38px;
+            color: black;
+            background-color: lightskyblue;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-top: -19px;
+            margin-left: -75px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 8px;
+            opacity: 0;
+        }
+        .bo1{
+            background-color: royalblue;
+            transform: scale(0.7) translate(-270px,0) rotate(-12deg);
+            animation: bo1 16s linear 0s infinite;
+        }
+        .bo1 a{
+            animation: bo1a 16s linear 0s infinite;
+        }
+        .bo2{
+            background-color: thistle;
+            transform: scale(0.7) translate(270px,0) rotate(12deg);
+            animation: bo2 16s linear 0s infinite;
+            transform: translate();
+        }
+        .bo2 a{
+            animation: bo2a 16s linear 0s infinite;
+        }
+        .bo3{
+            background-color: navajowhite;
+            transform: scale(0.6) translate(500px,30px) rotate(19deg) ;
+            animation: bo3 16s linear 0s infinite;
+        }
+        .bo3 a{
+            animation: bo3a 16s linear 0s infinite;
+        }
+        .bo4{
+            background-color: salmon;
+            transform: scale(1) translate(0px,0px) rotate(0deg) ;
+            animation: bo4 16s linear 0s infinite;
+        }
+        .bo4 a{
+            animation: bo4a 16s linear 0s infinite;
+        }
+
+
+        @keyframes bo1 {
+            0%{
+                transform: scale(0.7) translate(-270px,0) rotate(-12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 2;
+            }
+            20%{
+                transform: scale(0.7) translate(-270px,0) rotate(-12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 2;
+            }
+            25%{
+                transform: scale(0.6) translate(500px,30px) rotate(19deg) ;
+                box-shadow: 0px 0px;
+                z-index: 1;
+            }
+            45%{
+                transform: scale(0.6) translate(500px,30px) rotate(19deg) ;
+                box-shadow: 0px 0px;
+                z-index: 1;
+            }
+            50%{
+                transform: scale(0.7) translate(270px,0) rotate(12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 3;
+            }
+            70%{
+                transform: scale(0.7) translate(270px,0) rotate(12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 3;
+            }
+            75%{
+                transform: scale(1) translate(0,0) rotate(0deg) ;
+                box-shadow: 0px -70px 70px -50px black inset;
+                z-index: 4;
+            }
+            95%{
+                transform: scale(1) translate(0,0) rotate(0deg) ;
+                box-shadow: 0px -70px 70px -50px black inset;
+                z-index: 4;
+            }
+            100%{
+                transform: scale(0.7) translate(-270px,0) rotate(-12deg) ;
+                z-index: 2;
+            }
+        }
+        @keyframes bo1a {
+            0%{
+                opacity: 0;
+            }
+            74%{
+                opacity: 0;
+            }
+            75%{
+                opacity: 1;
+            }
+            95%{
+                opacity: 1;
+            }
+            96%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+
+        @keyframes bo2 {
+            0%{
+                transform: scale(0.7) translate(270px,0) rotate(12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 3;
+            }
+            20%{
+                transform: scale(0.7) translate(270px,0) rotate(12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 3;
+            }
+            25%{
+                transform: scale(1) translate(0,0) rotate(0deg) ;
+                box-shadow: 0px -70px 70px -50px black inset;
+                z-index: 4;
+            }
+            45%{
+                transform: scale(1) translate(0,0) rotate(0deg) ;
+                box-shadow: 0px -70px 70px -50px black inset;
+                z-index: 4;
+            }
+            50%{
+                transform: scale(0.7) translate(-270px,0) rotate(-12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 2;
+            }
+            70%{
+                transform: scale(0.7) translate(-270px,0) rotate(-12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 2;
+            }
+            75%{
+                transform: scale(0.6) translate(500px,30px) rotate(19deg) ;
+                box-shadow: 0px 0px;
+                z-index: 1;
+            }
+            95%{
+                transform: scale(0.6) translate(500px,30px) rotate(19deg) ;
+                box-shadow: 0px 0px;
+                z-index: 1;
+            }
+            100%{
+                transform: scale(0.7) translate(270px,0) rotate(12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 3;
+            }
+        }
+        @keyframes bo2a {
+            0%{
+                opacity: 0;
+            }
+            24%{
+                opacity: 0;
+            }
+            25%{
+                opacity: 1;
+            }
+            45%{
+                opacity: 1;
+            }
+            46%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+
+        @keyframes bo3 {
+            0%{
+                transform: scale(0.6) translate(500px,30px) rotate(19deg) ;
+                box-shadow: 0px 0px;
+                z-index: 1;
+            }
+            20%{
+                transform: scale(0.6) translate(500px,30px) rotate(19deg) ;
+                box-shadow: 0px 0px;
+                z-index: 1;
+            }
+            25%{
+                transform: scale(0.7) translate(270px,0) rotate(12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 3;
+            }
+            45%{
+                transform: scale(0.7) translate(270px,0) rotate(12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 3;
+            }
+            50%{
+                transform: scale(1) translate(0,0) rotate(0deg) ;
+                box-shadow: 0px -70px 70px -50px black inset;
+                z-index: 4;
+            }
+            70%{
+                transform: scale(1) translate(0,0) rotate(0deg) ;
+                box-shadow: 0px -70px 70px -50px black inset;
+                z-index: 4;
+            }
+            75%{
+                transform: scale(0.7) translate(-270px,0) rotate(-12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 2;
+            }
+            95%{
+                transform: scale(0.7) translate(-270px,0) rotate(-12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 2;
+            }
+            100%{
+                transform: scale(0.6) translate(500px,30px) rotate(19deg) ;
+                box-shadow: 0px 0px;
+                z-index: 1;
+            }
+        }
+        @keyframes bo3a {
+            0%{
+                opacity: 0;
+            }
+            49%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+            70%{
+                opacity: 1;
+            }
+            71%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+
+        @keyframes bo4 {
+            0%{
+                transform: scale(1) translate(0,0) rotate(0deg) ;
+                box-shadow: 0px -70px 70px -50px black inset;
+                z-index: 4;
+            }
+            20%{
+                transform: scale(1) translate(0,0) rotate(0deg) ;
+                box-shadow: 0px -70px 70px -50px black inset;
+                z-index: 4;
+            }
+            25%{
+                transform: scale(0.7) translate(-270px,0) rotate(-12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 2;
+            }
+            45%{
+                transform: scale(0.7) translate(-270px,0) rotate(-12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 2;
+            }
+            50%{
+                transform: scale(0.6) translate(500px,30px) rotate(19deg) ;
+                box-shadow: 0px 0px;
+                z-index: 1;
+            }
+            70%{
+                transform: scale(0.6) translate(500px,30px) rotate(19deg) ;
+                box-shadow: 0px 0px;
+                z-index: 1;
+            }
+            75%{
+                transform: scale(0.7) translate(270px,0) rotate(12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 3;
+            }
+            95%{
+                transform: scale(0.7) translate(270px,0) rotate(12deg) ;
+                box-shadow: 0px 0px;
+                z-index: 3;
+            }
+            100%{
+                transform: scale(1) translate(0,0) rotate(0deg) ;
+                box-shadow: 0px 0px;
+                z-index: 4;
+            }
+        }
+        @keyframes bo4a {
+            0%{
+                opacity: 1;
+            }
+            20%{
+                opacity: 1;
+            }
+            21%{
+                opacity: 0;
+            }
+            99%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="bo1">
+            <a href="">查询详细</a>
+        </div>
+        <div class="bo2">
+            <a href="">查询详细</a>
+        </div>
+        <div class="bo3">
+            <a href="">查询详细</a>
+        </div>
+        <div class="bo4">
+            <a href="">查询详细</a>
+        </div>
+    </div>
+</body>
+</html>
