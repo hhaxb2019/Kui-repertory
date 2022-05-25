@@ -1,2 +1,2 @@
 # Kui-repertory
-html-css小案例
+html-css-JavaScript小案例
